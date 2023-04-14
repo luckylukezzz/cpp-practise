@@ -14,10 +14,12 @@ int main(int argc, char const *argv[])
      printf("%p\n",ptr2);
 
     ptr2 = &ptr;
-    printf("%p",ptr2);   //memory location of pointer 1
+    printf("%p\n",ptr2);   //memory location of pointer 1
 
 
-
+    int* ptr3=(int*) new int; //casting a int object 
+    *ptr3=7;            //dereferencing
+    printf("%d\n",*ptr3); 
 
     return 0;
 }
